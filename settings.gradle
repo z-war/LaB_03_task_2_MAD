@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='LaB_03_task_2'

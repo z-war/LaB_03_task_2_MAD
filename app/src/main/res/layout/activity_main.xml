@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/logoIV"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/logo4"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/headTV"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_below="@id/logoIV"
+                android:text="Select Your Dream Car"
+                android:padding="10dp"
+                ></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstET"
+                android:layout_below="@id/headTV"></EditText>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/firstRL"
+                android:layout_below="@id/firstET"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo4"
+                    android:id="@+id/FirstIV"></ImageView>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo4"
+                    android:layout_toRightOf="@id/FirstIV"
+                    android:id="@+id/secIV"></ImageView>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo4"
+                    android:layout_toRightOf="@id/secIV"
+                    android:id="@+id/thirdIV"></ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/secRL"
+                android:layout_below="@id/firstRL"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mercedes S Class"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/FirstTV"
+                    android:textSize="20sp"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mercedes E Class"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/secTV"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/FirstTV"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mercedes V Class"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/thirdTV"
+                    android:layout_toRightOf="@id/secTV"
+                    android:textSize="20sp"
+                    ></TextView></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/thrRL"
+                android:layout_below="@id/secRL"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now !"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/Firstbtn"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    ></Button>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now !"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/sectbtn"
+                    android:layout_toRightOf="@id/Firstbtn"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    ></Button>
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now !"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/thrdbtn"
+                    android:layout_toRightOf="@id/sectbtn"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    ></Button></RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
